@@ -61,7 +61,7 @@ app.get("/", (req, res) =>{
 app.get("/cheese", async (req, res)=>{
     //try catch block to catch hidden errors - run the code thats inside the block and if something goes wrong it will log the error and not shut down the live app
     try {
-        //send all people 
+        //send all cheese 
         res.json(await Cheese.find({}))
     } catch (error) {
         //send error
